@@ -35,27 +35,14 @@
                 Voltar  
             </a>
         </div>
-        <p style="text-align: center;" id="txtcentro">
-           
-        </p>
+        <p style="text-align: center;" id="txtcentro"></p>
     </div>
 </body>
 <script>
-    function recolheMenu(menu){
-        //console.log(menu);
-        //alert(menu);
-        //texto = document.getElementsByClassName('texto');
-        //for (i=0;i<=3;i++){
-        //texto[0].innerHTML('teste');
-        //}
-        //let txt = "texto "+ menu;
-        //alert(txt);
+    const recolheMenu = (menu) => {
         document.getElementById("txtcentro").innerHTML("<h1>Texto 1</h1>");
-        //document.getElementById('ladoesquerdo').style.width("10vw");
-        //document.getElementById("ladodireito").style.color("blue");
-       // alert(menu);
     }
-    function expandeMenu(){
+    const expandeMenu = () => {
         let elemento1 = document.getElementById("ladodireito");
         elemento1.innerHTML("teste");
         alert("teste");

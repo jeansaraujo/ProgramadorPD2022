@@ -40,7 +40,7 @@
     </table>
     <button onclick="imc()">Clique aqui para saber seu IMC!</button>
 
-    <hr />
+    <hr/>
 
     <p>Formas de Imprimir</p>
     <ul>
@@ -75,14 +75,14 @@
         <button>Event 5</button>
       </li>
     </ul>
-    <hr />
+    <hr/>
     <a class="titulo" href="">Texto de Link</a>
     <p class="titulo">Texto de Paragrafo</p>
     <span class="titulo"> Texto de span</span>
-    <br />
+    <br/>
     <button onclick="alteraTexto()">Altera Texto</button>
 
-    <hr />
+    <hr/>
 
     <h1>Alterando estilo com JavaScript</h1>
 
@@ -91,15 +91,14 @@
   </body>
 
   <script>
-    function saiba() {
+    const saiba = () => {
       let s = document.getElementById("texto");
       s.style.color = "red";
       s.style.fontWeight = 900;
       s.style.textAlign = "center";
       s.innerHTML = "Sou empresario e de Canhotinho ... sucesso para o Mundo";
     }
-
-    function imc() {
+    const imc = () => {
       let nome, peso, altura, imc;
       nome = document.getElementById("nome").value;
       peso = document.getElementById("peso").value;
@@ -111,7 +110,7 @@
       //document.write("texte dafasfsdaf");
       alert(imc);
     }
-    function alteraTexto() {
+    const alteraTexto = () => {
       let elementos = document.getElementsByClassName("titulo");
       for (var i = 0; i <= 2; i++) {
         elementos[i].innerHTML = "Texto Novo";
