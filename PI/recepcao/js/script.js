@@ -1,16 +1,16 @@
-    window.addEventListener('onload',chamaTela());
+window.addEventListener('load', () => chamaTela());
 
-    document.addEventListener('mousemove', function() {
-        if (timeout !== null) {            
-            document.querySelector("#protecaoTela").style.visibility = "hidden";
-            clearTimeout(timeout);
-        }
-        chamaTela();
-    }); 
+document.addEventListener('mousemove', () => {
+    if (timeout !== null) {            
+        document.querySelector("#protecaoTela").style.visibility = "hidden";
+        clearTimeout(timeout);
+    }
+    chamaTela();
+});
 
-    function chamaTela(){     
-     timeout = setTimeout(function() {
+const chamaTela = () => {     
+    timeout = setTimeout(() => {
         window.scroll(0,0);
         document.querySelector("#protecaoTela").style.visibility = "visible";
-     },60000);
- }
+    }, 60000);
+};
